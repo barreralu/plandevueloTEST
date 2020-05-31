@@ -1,0 +1,40 @@
+{
+  "name": "scaffolfing",
+  "version": "1.0.0",
+  "description": "scaffolfing",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "npm run serve",
+    "serve": "set DEBUG=scaffolfing:* & node -r dotenv/config ./src/server.js",
+    "watch": "nodemon",
+    "lint": "eslint 'src/**/**.js'"
+  },
+  "author": "Google Inc.",
+  "license": "0BSD",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "connect-flash": "^0.1.1",
+    "cors": "^2.8.5",
+    "debug": "^4.1.1",
+    "dotenv": "^8.2.0",
+    "errorhandler": "^1.5.1",
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.4",
+    "express-session": "^1.17.1",
+    "express-validator": "^6.5.0",
+    "http-errors": "^1.7.3",
+    "method-override": "^3.0.0",
+    "morgan": "^1.10.0",
+    "mysql2": "^2.1.0",
+    "parse-error": "^0.2.0",
+    "pg": "^8.2.1",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^5.21.11",
+    "sequelize-cli": "^5.5.1"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "eslint": "^7.1.0",
+    "nodemon": "^2.0.4"
+  }
+}

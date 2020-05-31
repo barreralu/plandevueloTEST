@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+	<!-- Global stylesheets -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+	<link href="/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+	<link href="/css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="/css/core.css" rel="stylesheet" type="text/css">
+	<link href="/css/components.css" rel="stylesheet" type="text/css">
+	<link href="/css/colors.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- /global stylesheets -->
+    <!-- Side Bar stylesheets -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!-- /Side Bar stylesheets -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+
+<!--
+    <style> 
+            body {
+                    background-image:url('../img/showcase.jpg');
+                    background-repeat: no-repeat;
+                    background-position: left top;
+                    background-size: 100% 100%;
+            }
+    </style> -->    
+</head>
+<body>
+<!-- Barrera Juan  -->
+    <nav class="navbar navbar-expand-lg w3-dark-grey bg-dark">
+        <a href="/"><img src="/img/route.png"  width="90" height="50" alt=""></a>    
+        <a class="navbar-brand navbar-left" href="/">Plan De Vuelo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  navbar-right">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/user">User</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="/img/Sol.jpg"  width="25" height="25" alt=""> Luis
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/user"><i class="icon-user-plus"></i> Mi perfil</a>
+                        <a class="dropdown-item" href="/user"><i class="icon-airplane2"></i> Mis Aviones</a>
+                        <a class="dropdown-item" href="/user"><span class="badge badge-warning pull-right">2</span> <i class="icon-comment-discussion"></i> Mensajes</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/user"><i class="icon-cog5"></i> Opciones</a>
+                        <a class="dropdown-item" href="/user"><i class="icon-switch2"></i> Salir</a>
+                        </div>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+<!-- /Barrera Juan  -->
+
+<!-- Barrera Izquierda  -->
+<div class="w3-sidebar w3-bar-block w3-dark-grey" style="width:20%">
+     <!-- User menu -->
+     <div class="sidebar-user">
+         <div class="category-content">
+             <div class="media">
+                 <a href="#" class="media-left"><img src="../img/Sol.jpg" class="img-circle img-sm" alt=""></a>
+                 <div class="media-body">
+                     <span class="media-heading text-semibold">Barrera Luis</span>
+                     <div class="text-size-mini text-white">
+                         <i class="icon-pin text-size-small"></i> &nbsp;Juarez Celaman, CBA
+                     </div>
+                 </div>
+                 <div class="media-right media-middle">
+                     <ul class="icons-list">
+                         <li>
+                             <a href="#"><i class="icon-cog3"></i></a>
+                         </li>
+                     </ul>
+                 </div>
+             </div>
+         </div>
+     </div>
+     <!-- /user menu -->
+
+    <!-- System menu -->
+    <a href="/" class="w3-bar-item w3-button"><i class="icon-home4"></i> Home</a> 
+    <!-- System menu  / Gesion de Pilotos-->
+    <div class="w3-dropdown-hover">
+        <button class="w3-button"> <i class="icon-profile"></i> <span>Gestion Pilotos</span>
+        <i class="fa fa-caret-down"></i>
+        </button>
+            <div class="w3-dropdown-content w3-bar-block">
+                <a href="#" class="w3-bar-item w3-button">Consultar Piloto</a>
+                <a href="#" class="w3-bar-item w3-button">Agregar Piloto</a>
+                <a href="#" class="w3-bar-item w3-button">Opcion1</a>
+                <a href="#" class="w3-bar-item w3-button">Opcion2</a>
+            </div>
+    </div> 
+    <!-- System menu  / Gesion de Aeronaves-->
+    <div class="w3-dropdown-hover">
+        <button class="w3-button"> <i class="icon-airplane2"></i> <span>Gestion Aeronaves</span>
+        <i class="fa fa-caret-down"></i>
+        </button>
+            <div class="w3-dropdown-content w3-bar-block">
+                <a href="#" class="w3-bar-item w3-button">Consultar Aeronaves</a>
+                <a href="#" class="w3-bar-item w3-button">Agregar Aeronave</a>
+                <a href="#" class="w3-bar-item w3-button">Editar Aeronave</a>
+                <a href="#" class="w3-bar-item w3-button">Opcion2</a>
+            </div>
+    </div> 
+    <!-- System menu  / Gesion de Despegue-->
+    <div class="w3-dropdown-hover">
+        <button class="w3-button"> <i class="icon-airplane3"></i> <span>Gestion de Despegues</span>
+        <i class="fa fa-caret-down"></i>
+        </button>
+            <div class="w3-dropdown-content w3-bar-block">
+                <a href="#" class="w3-bar-item w3-button">Consultar Despegue</a>
+                <a href="#" class="w3-bar-item w3-button">Solicitar Despegue</a>
+                <a href="#" class="w3-bar-item w3-button">Opcion2</a>
+            </div>
+    </div> 
+    <!-- System menu  / Gesion de Plan de Vuelo-->
+    <div class="w3-dropdown-hover">
+        <button class="w3-button"> <i class="icon-stack"></i> <span>Gestion de Plan de Vuelo</span>
+        <i class="fa fa-caret-down"></i>
+        </button>
+            <div class="w3-dropdown-content w3-bar-block">
+                <a href="#" class="w3-bar-item w3-button">Consultar Plan de Vuelo</a>
+                <a href="#" class="w3-bar-item w3-button">Presentar Plan de Vuelo</a>
+                <a href="#" class="w3-bar-item w3-button">Autorizar Plan de Vuelo</a>
+            </div>
+    </div> 
+
+    <!-- /System menu -->
+</div>
+
+<div style="margin-left:20%"
+<!-- /Barrera Izquierda -->
+    <main>
+        <div class="container">
+            {{{body}}}
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
